@@ -1,10 +1,32 @@
 /* tr:nth-child(2n){
     background-color: rgb(207, 190, 190);
 } */
+
 @media only screen and (max-width: 475px){
     .commands{
         display: flex;
-        flex-wrap: wrap;
         justify-content: space-between;
-    }   
+        flex-wrap: wrap;
+    }
+    .commands #insert, #create, #remove, #list{
+        margin-top: 10px;
+        align-self: center;
+    }
+    #recordlist .tr{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    } 
+    /* table { 
+        table-layout:fixed;
+    }
+    td { 
+        overflow: hidden; 
+        text-overflow: ellipsis; 
+        word-wrap: break-word;
+    }
+    .tablemobile {
+        overflow-x: auto;
+        display: block;
+    } */
 }
