@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>SQL DATABASE</title>
+    <meta name="viewport" content="user-scalable=no,width=device-width" />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/more.css">
+
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+</head>
+
+<body style="margin:30px">
+    <!--
+	How to View Web SQL data:
+	0. Run the source code above on your browser
+	1. Press Ctrl + Shift + I
+	2. Click on "Application" tab
+	3. Double click on "Web SQL" then click on itemDB (name of our database)
+	-->
+    <header>Add Student Record</header>
+    <div class="container">
+
+        <div class="row">
+            <form>
+                <fieldset>
+                    <legend>Student ID</legend>
+                    <input type="text" class="form-control" name="" id="id" required>
+
+                    <legend>Student Name</legend>
+                    <input type="text" class="form-control" id="name" name="" required>
+
+                    <legend>Student Semester</legend>
+                    <!-- <input type="number" class="form-control" name="" id="sem"> -->
+                    <select class="form-control" id="sem" required>
+                        <option value="" selected disabled hidden>Select An Option</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                    </select>
+
+                    <legend>Student Degree</legend>
+                    <!-- <input type="text" class="form-control" id="deg" name=""> -->
+                    <select class="form-control" id="deg" required>
+                        <option value="" selected disabled hidden>Select An Option</option>
+                        <option value="Information Technology">BS - IT</option>
+                        <option value="Computer Science">BS - CS</option>
+                        <option value="Software Engineering">BS - SE</option>
+                    </select>
+
+                    <legend>Student Email</legend>
+                    <input type="email" class="form-control" name="" id="email" value="@pucit.edu.pk" disabled>
+
+                    <br>
+                    <button type="button" id="insert" class="btn btn-success">Insert</button>
+
+                    <button type="button" id="create" class="btn btn-success">Create Table</button>
+
+                    <button type="button" id="remove" class="btn btn-danger">Delete Table</button>
+
+                    <button type="button" id="list" class="btn btn-success">Fetch Record</button>
+
+                    <p><small><b>Note:</b> Table must be created first before inserting or performing any
+                            transaction</small></p>
+
+                </fieldset>
+            </form>
+
+            <hr>
+            <h4>Record</h4>
+            <table class="table table-bordered table-hover" id="recordlist">
+
+            </table>
+
+        </div>
+    </div>
+
+    <script type="text/javascript" src="./js/binding.js"></script>
+
+</body>
+
+</html>
