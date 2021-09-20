@@ -8,7 +8,7 @@ A demonstration of local database creation on browser and performing operations 
 - Create Table. 
 - Enter the data to add record into table.
 - Fetch Record To view data
-- You can update / remove any previously entered data. 
+- You can update / remove any previously entered data or can delete complete table. 
 - Login Functionality is not provided
 
 ---------------
